@@ -82,6 +82,13 @@ spectrogram(myRecording, kaiser(256,5), 220, 512, 8e3, 'yaxis')
 colormap jet
 title('Spectrogram');
 
+<<<<<<< HEAD
+%% Opgave 2b: 
+
+
+
+=======
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 %% Opgave 3:
 
 

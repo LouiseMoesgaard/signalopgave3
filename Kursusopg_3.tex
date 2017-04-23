@@ -62,10 +62,9 @@ Analyser signalet igen efter filtrering.}\\
 
 Hvid støj defineres som et støjsignal hvor alle frekvenser repræsenteres med samme effekt. Ægte hvid støj er et uendeligt signal, der går fra tiden minus uendelig til plus uendelig med en uendelig samplingsfrekvens. I praksis er dette ikke muligt, og man arbejder derfor kun med et endeligt tidsdomæne hvor signalet har en begrænset båndbredde til den halve samplingsfrekvens (Nyquist). 
 
-
 Koden er rettet til, således et menneske kan sige den samme søtning på omkring 5 sejunder. - sætningen lød: "Hvis jeg bliver mere klar, så bliver jeg sgu gennemsigtig!". 
 
-Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og henholdsvis to spektogrammer, med og uden hvid støj.
+Herunder ses talesignalet, hvor der er vist tidsdomæne, frekvensdomæne og henholdsvis to spektogrammer, med og uden hvid støj.
 
 \begin{figure}[H] 
 \centering
@@ -73,7 +72,10 @@ Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og hen
 \caption{Talesignal ved forskellige tilstande} \label{White_noise_60}
 \end{figure}
 
+
 Herunder vil der blive gennemgået lidt teori om SNR, da vi i Matlabkoden har anvendt funktionen awgn(myRecording,SNR) som tilføjer hvid Gaussisk støj til vektorsignalet, myRecording. 
+
+Herunder vil der blive gennemgået lidt teori om SNR, da vi i matlabkoden har anvendt funktionen awgn(myRecording,SNR) som tilføjer hvid Gaussisk støj til vektorsignalet, myRecording. 
 
 Signal-støj-ratio (SNR) er et værktøj, hvor niveauet af et ønsket signal sammenlignes med niveauet af hvid Gaussisk baggrundsstøj. SNR specificerer signal-støjforholdet pr. sample, målt i dB.\\
 \\
@@ -101,6 +103,7 @@ SNR_{dB} &= 10 \cdot log_{10}(SNR) dB = 10 \cdot log_{10}(\frac{p_{signal}}{p_{s
 
 Hvis man sætter $E(x^2)=p_{støj}= x^2_{rms}$ fåes: 
 
+
 \begin{align}
 SNR_{dB} &= 10.79 + 20log_{10}(\frac{x_{rms}}{\Delta}) dB
 \end{align}
@@ -119,6 +122,7 @@ Er forholdet større end 0 dB, angives der mere signal end støj. Jo højere SNR
 
 Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generere et 8. ordens lavpas Fir filter, hvor samplingsfrekvensen er på 8000 Hz. Dette ses nedenfor:  
 
+
 \begin{figure}[H] 
 \centering
 \includegraphics[width=0.7\textwidth]{grafer/lavpasfilter}
@@ -126,7 +130,8 @@ Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generer
 \end{figure}
 
 
-For at køre talesignalet med hvid støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fr fdatool i workspace. 
+For at køre talesignalet med hvid støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fra fdatool i workspace. 
+
 
 Herunder ses talesignalet efter filteringen: 
 
@@ -191,6 +196,9 @@ alle 3 signaler i en:
 
 \section*{Opgave 5: Anvend en vindue-funktion på et af ovenstående signaler. Forklar hvorfor en vindue-funktion kan være nødvendig, hvad den gør og hvordan den anvendes.}
 \textit{Vis ved et eksempel}\\
+
+
+gsfss
 
 \end{document}
 
