@@ -73,14 +73,51 @@ Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og hen
 \caption{Talesignal ved forskellige tilstande} \label{White_noise_60}
 \end{figure}
 
-Herunder vil der blive gennemgået lidt teori om SNR, da vi i matlabkoden har anvendt funktionen awgn(myRecording,SNR) som tilføjer hvid Gaussisk støj til vektorsignalet, myRecording. 
+Herunder vil der blive gennemgået lidt teori om SNR, da vi i Matlabkoden har anvendt funktionen awgn(myRecording,SNR) som tilføjer hvid Gaussisk støj til vektorsignalet, myRecording. 
 
-Signal-støj-forhold (SNR) er en foranstaltning, som sammenligner niveauet af et ønsket signal til niveauet af baggrundsstøj. Det defineres som forholdet mellem signaleffekt til støjeffekten, ofte udtrykt i decibel. Et forhold større end 1: 1 (større end 0 dB) angiver mere signal end støj. Mens SNR er almindeligt citeret for elektriske signaler, kan den anvendes til enhver form for signal (såsom isotop niveauer i en iskerne eller biokemisk signalering mellem celler)."  
+Signal-støj-ratio (SNR) er et værktøj, hvor niveauet af et ønsket signal sammenlignes med niveauet af hvid Gaussisk baggrundsstøj. SNR specificerer signal-støjforholdet pr. sample, målt i dB.\\
+\\
+\\
 
-Evt. vis SNR. 
+SNR er relateret til kvantiserings step. Dette forhold er givet ved: 
+
+\begin{align}
+E(e_q^2) = \frac{\Delta^2}{12}
+\end{align}
+
+Hvis man sætter $x=myRecording$, gives SNR ved formlen: 
+
+\begin{align}
+SNR &= \frac{E(x^2)}{E(e_q^2)}=\frac{p_{signal}}{p_{støj}}\\
+\\
+SNR &= \frac{\sum\limits_{n=0}^{N-1} x^2(n)}{\sum\limits_{n=0}^{N-1} e_{q}^2(n)}
+\end{align}
+
+Via definitionen af ​​decibel kan signal og støj udtrykkes i decibel (dB): 
+
+\begin{align}
+SNR_{dB} &= 10 \cdot log_{10}(SNR) dB = 10 \cdot log_{10}(\frac{p_{signal}}{p_{støj}})dB
+\end{align}
+
+Hvis man sætter $E(x^2)=p_{støj}= x^2_{rms}$ fåes: 
+
+\begin{align}
+SNR_{dB} &= 10.79 + 20log_{10}(\frac{x_{rms}}{\Delta}) dB
+\end{align}
+
+man kan udregne $x_{rms}$ og $\Delta:$
+
+\begin{align}
+x_{\mathrm{rms}} &= {\sqrt {{\frac {1}{n}}\left(x_{1}^{2}+x_{2}^{2}+\cdots +x_{n}^{2}\right)}}.\\
+\\
+\Delta &= \frac{x_{max}-x_{min}}{2^m}
+\end{align}
 
 
-Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generere et 8. ordens lavpas Fir filter, hvor samplingsfrekvensen er på 8000. Dette ses nedenfor. 
+Er forholdet større end 0 dB, angives der mere signal end støj. Jo højere SNR er, jo mere støj er det tilstede. Vi valgte at sætte $SNR=60 dB$, da man her kunne se signal og støj tydeligt. Vi prøvede værdier tættere på 0 dB, men fik for lidt støj. Vi prøvede ligeledes værdier højere en 60 dB, men her forsvandt signalet i støj.\\
+\\  
+
+Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generere et 8. ordens lavpas Fir filter, hvor samplingsfrekvensen er på 8000 Hz. Dette ses nedenfor:  
 
 \begin{figure}[H] 
 \centering
@@ -100,8 +137,7 @@ Herunder ses talesignalet efter filteringen:
 \end{figure}
 
 
-Det er blåt, fordi støjen er fjernet.
-
+Det ses, at støjen er fjernet ved alt over cutof frekvensen på 3000 Hz. Hvorfor er der ikke cuttet af overalt? 
 
 \section*{Opgave 2: Båndpas-filter til analyse af vokaler ’a’  ’e’  ’i}
 \textit{Indspil selv lyd som indeholder vokalerne ’a’  ’e’  ’i’ – analyser signalerne og bestem de nødvendige filterspecifikationer så f.eks. et ’a’ detekteres i ’en talestrøm’. Implementer filteret i Matlab og dokumenter designet.}\\
