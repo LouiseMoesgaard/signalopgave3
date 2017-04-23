@@ -1,4 +1,4 @@
-%% Opgave 1b:
+%% Opgave 1a:
 
 % Udleveret kode af Kurt (ogs? anvendt i kursusopgave 2): 
 recObj = audiorecorder(8000, 16, 2); % Lav et Recorderobject.
@@ -61,7 +61,7 @@ recObj = audiorecorder(8000, 16, 2); % Lav et Recorderobject.
 get(recObj) 
 recObj = audiorecorder;
 disp('Start speaking.')
-recordblocking(recObj, 1);           % Optag stemme i 5 sek.
+recordblocking(recObj, 5);           % Optag stemme i 5 sek.
 disp('End of Recording.'); 
 play(recObj);                        % Afspil optagelse.
 myRecording = getaudiodata(recObj);% Gem data i et "double-precision" array.
@@ -82,10 +82,8 @@ spectrogram(myRecording, kaiser(256,5), 220, 512, 8e3, 'yaxis')
 colormap jet
 title('Spectrogram');
 
-%% Opgave 2b: 
-
-
 %% Opgave 3:
+
 
 %% Opgave 4:
 

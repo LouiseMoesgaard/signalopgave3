@@ -73,9 +73,9 @@ Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og hen
 \caption{Talesignal ved forskellige tilstande} \label{White_noise_60}
 \end{figure}
 
-(Teori om SNR, da vi har brugt awgn(x,SNR)) 
+Herunder vil der blive gennemgået lidt teori om SNR, da vi i matlabkoden har anvendt funktionen awgn(myRecording,SNR) som tilføjer hvid Gaussisk støj til vektorsignalet, myRecording. 
 
-"Signal-støj-forhold (forkortet SNR eller S / N) er en foranstaltning, der anvendes inden for videnskab og teknik, som sammenligner niveauet af et ønsket signal til niveauet af baggrundsstøj. Det defineres som forholdet mellem signaleffekt til støjeffekten, ofte udtrykt i decibel. Et forhold større end 1: 1 (større end 0 dB) angiver mere signal end støj. Mens SNR er almindeligt citeret for elektriske signaler, kan den anvendes til enhver form for signal (såsom isotop niveauer i en iskerne eller biokemisk signalering mellem celler)."  
+Signal-støj-forhold (SNR) er en foranstaltning, som sammenligner niveauet af et ønsket signal til niveauet af baggrundsstøj. Det defineres som forholdet mellem signaleffekt til støjeffekten, ofte udtrykt i decibel. Et forhold større end 1: 1 (større end 0 dB) angiver mere signal end støj. Mens SNR er almindeligt citeret for elektriske signaler, kan den anvendes til enhver form for signal (såsom isotop niveauer i en iskerne eller biokemisk signalering mellem celler)."  
 
 Evt. vis SNR. 
 
@@ -89,7 +89,7 @@ Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generer
 \end{figure}
 
 
-For at køre talesignalet med hvis støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fr fdatool i workspace. 
+For at køre talesignalet med hvid støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fr fdatool i workspace. 
 
 Herunder ses talesignalet efter filteringen: 
 
@@ -109,23 +109,35 @@ Det er blåt, fordi støjen er fjernet.
 
 vi har valgt at indspille de 3 vokaler: 
 
-et a: 
+Et a: 
 
-et e: 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.7\textwidth]{grafer/opg2_a}
+\caption{Talesignal ved forskellige tilstande} \label{opg2_a}
+\end{figure}
 
-et i: 
+Et e: 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.7\textwidth]{grafer/opg2_e}
+\caption{Talesignal ved forskellige tilstande} \label{opg2_e}
+\end{figure}
 
-
-
-
+Et i: 
+\begin{figure}[H] 
+\centering
+\includegraphics[width=0.7\textwidth]{grafer/opg2_i}
+\caption{Talesignal ved forskellige tilstande} \label{opg2_i}
+\end{figure}
 
 alle 3 signaler i en: 
 
 
 \begin{figure}[H] 
 \centering
-\includegraphics[width=0.7\textwidth]{grafer/opg2_vokaler}
-\caption{Talesignal ved forskellige tilstande} \label{opg2_vokaler}
+\includegraphics[width=0.7\textwidth]{grafer/opg2_all}
+\caption{Talesignal ved forskellige tilstande} \label{opg2_all}
 \end{figure}
 
 
