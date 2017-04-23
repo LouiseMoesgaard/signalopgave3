@@ -62,16 +62,16 @@ Analyser signalet igen efter filtrering.}\\
 
 Hvid støj defineres som et støjsignal hvor alle frekvenser repræsenteres med samme effekt. Ægte hvid støj er et uendeligt signal, der går fra tiden minus uendelig til plus uendelig med en uendelig samplingsfrekvens. I praksis er dette ikke muligt, og man arbejder derfor kun med et endeligt tidsdomæne hvor signalet har en begrænset båndbredde til den halve samplingsfrekvens (Nyquist). 
 
-
 Koden er rettet til, således et menneske kan sige den samme søtning på omkring 5 sejunder. - sætningen lød: "Hvis jeg bliver mere klar, så bliver jeg sgu gennemsigtig!". 
 
-Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og henholdsvis to spektogrammer, med og uden hvid støj.
+Herunder ses talesignalet, hvor der er vist tidsdomæne, frekvensdomæne og henholdsvis to spektogrammer, med og uden hvid støj.
 
 \begin{figure}[H] 
 \centering
 \includegraphics[width=0.7\textwidth]{grafer/White_noise_60}
 \caption{Talesignal ved forskellige tilstande} \label{White_noise_60}
 \end{figure}
+
 
 (Teori om SNR, da vi har brugt awgn(x,SNR)) 
 
@@ -80,7 +80,7 @@ Herunder ses talesignallet, hvor der er vist tidsdomæne, frekvensdomæne og hen
 Evt. vis SNR. 
 
 
-Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generere et 8. ordens lavpas Fir filter, hvor samplingsfrekvensen er på 8000. Dette ses nedenfor. 
+Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generere et 8. ordens lavpas FIR-filter, hvor samplingsfrekvensen er på 8000. Dette ses nedenfor. 
 
 \begin{figure}[H] 
 \centering
@@ -89,7 +89,7 @@ Herefter lavede vi et lavpasfilter vha. fdatool i Matlab. - vi valgte at generer
 \end{figure}
 
 
-For at køre talesignalet med hvis støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fr fdatool i workspace. 
+For at køre talesignalet med hvid støj igennem vores lavpasfilter, gemte vi blot filterkoeficienterne fra fdatool i workspace. 
 
 Herunder ses talesignalet efter filteringen: 
 
@@ -143,6 +143,9 @@ alle 3 signaler i en:
 
 \section*{Opgave 5: Anvend en vindue-funktion på et af ovenstående signaler. Forklar hvorfor en vindue-funktion kan være nødvendig, hvad den gør og hvordan den anvendes.}
 \textit{Vis ved et eksempel}\\
+
+
+gsfss
 
 \end{document}
 

@@ -1,4 +1,4 @@
-%% Opgave 1b:
+%% Opgave 1a:
 
 % Udleveret kode af Kurt (ogs? anvendt i kursusopgave 2): 
 recObj = audiorecorder(8000, 16, 2); % Lav et Recorderobject.
@@ -83,6 +83,7 @@ colormap jet
 title('Spectrogram');
 
 %% Opgave 2b: 
+
 
 
 %% Opgave 3:
