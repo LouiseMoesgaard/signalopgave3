@@ -61,7 +61,7 @@ recObj = audiorecorder(8000, 16, 2); % Lav et Recorderobject.
 get(recObj) 
 recObj = audiorecorder;
 disp('Start speaking.')
-recordblocking(recObj, 1);           % Optag stemme i 5 sek.
+recordblocking(recObj, 5);           % Optag stemme i 5 sek.
 disp('End of Recording.'); 
 play(recObj);                        % Afspil optagelse.
 myRecording = getaudiodata(recObj);% Gem data i et "double-precision" array.
@@ -82,11 +82,15 @@ spectrogram(myRecording, kaiser(256,5), 220, 512, 8e3, 'yaxis')
 colormap jet
 title('Spectrogram');
 
+<<<<<<< HEAD
 %% Opgave 2b: 
 
 
 
+=======
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 %% Opgave 3:
+
 
 %% Opgave 4:
 

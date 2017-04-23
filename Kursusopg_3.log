@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.23)  23 APR 2017 15:56
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.4)  23 APR 2017 15:40
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,6 +1014,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
+<<<<<<< HEAD
 Package epstopdf Info: Source file: <grafer/opg2_vokaler.eps>
 (epstopdf)                    date: 2017-04-23 14:37:38
 (epstopdf)                    size: 364303 bytes
@@ -1026,18 +1031,145 @@ File: grafer/opg2_vokaler-eps-converted-to.pdf Graphic file (type pdf)
 <use grafer/opg2_vokaler-eps-converted-to.pdf>
 Package pdftex.def Info: grafer/opg2_vokaler-eps-converted-to.pdf used on input
  line 127.
-(pdftex.def)             Requested size: 318.66948pt x 239.00082pt.
+=======
+Package epstopdf Info: Source file: <grafer/opg2_a.eps>
+(epstopdf)                    date: 2017-04-18 12:48:47
+(epstopdf)                    size: 264080 bytes
+(epstopdf)             Output file: <grafer/opg2_a-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-23 14:50:22
+(epstopdf)                    size: 71556 bytes
+(epstopdf)             Command: <repstopdf --outfile=grafer/opg2_a-eps-converte
+d-to.pdf grafer/opg2_a.eps>
+(epstopdf)             \includegraphics on input line 116.
+Package epstopdf Info: Output file is already uptodate.
+<grafer/opg2_a-eps-converted-to.pdf, id=68, 562.1pt x 421.575pt>
+File: grafer/opg2_a-eps-converted-to.pdf Graphic file (type pdf)
 
+<use grafer/opg2_a-eps-converted-to.pdf>
+Package pdftex.def Info: grafer/opg2_a-eps-converted-to.pdf used on input line 
+116.
+(pdftex.def)             Requested size: 318.66948pt x 239.00082pt.
+Package epstopdf Info: Source file: <grafer/opg2_e.eps>
+(epstopdf)                    date: 2017-04-18 13:00:53
+(epstopdf)                    size: 275032 bytes
+(epstopdf)             Output file: <grafer/opg2_e-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-23 14:51:13
+(epstopdf)                    size: 78269 bytes
+(epstopdf)             Command: <repstopdf --outfile=grafer/opg2_e-eps-converte
+d-to.pdf grafer/opg2_e.eps>
+(epstopdf)             \includegraphics on input line 123.
+Package epstopdf Info: Output file is already uptodate.
+
+<grafer/opg2_e-eps-converted-to.pdf, id=69, 562.1pt x 421.575pt>
+File: grafer/opg2_e-eps-converted-to.pdf Graphic file (type pdf)
+
+<use grafer/opg2_e-eps-converted-to.pdf>
+Package pdftex.def Info: grafer/opg2_e-eps-converted-to.pdf used on input line 
+123.
+(pdftex.def)             Requested size: 318.66948pt x 239.00082pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 126.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 126.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.126 
+       <./grafer/opg2_a-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <grafer/opg2_i.eps>
+(epstopdf)                    date: 2017-04-23 14:49:33
+(epstopdf)                    size: 262871 bytes
+(epstopdf)             Output file: <grafer/opg2_i-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-23 14:51:14
+(epstopdf)                    size: 71203 bytes
+(epstopdf)             Command: <repstopdf --outfile=grafer/opg2_i-eps-converte
+d-to.pdf grafer/opg2_i.eps>
+(epstopdf)             \includegraphics on input line 130.
+Package epstopdf Info: Output file is already uptodate.
+
+<grafer/opg2_i-eps-converted-to.pdf, id=86, 562.1pt x 421.575pt>
+File: grafer/opg2_i-eps-converted-to.pdf Graphic file (type pdf)
+
+<use grafer/opg2_i-eps-converted-to.pdf>
+Package pdftex.def Info: grafer/opg2_i-eps-converted-to.pdf used on input line 
+130.
+(pdftex.def)             Requested size: 318.66948pt x 239.00082pt.
+Package epstopdf Info: Source file: <grafer/opg2_all.eps>
+(epstopdf)                    date: 2017-04-23 14:53:49
+(epstopdf)                    size: 328344 bytes
+(epstopdf)             Output file: <grafer/opg2_all-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-04-23 14:54:57
+(epstopdf)                    size: 226589 bytes
+(epstopdf)             Command: <repstopdf --outfile=grafer/opg2_all-eps-conver
+ted-to.pdf grafer/opg2_all.eps>
+(epstopdf)             \includegraphics on input line 139.
+Package epstopdf Info: Output file is already uptodate.
+
+<grafer/opg2_all-eps-converted-to.pdf, id=87, 562.1pt x 421.575pt>
+File: grafer/opg2_all-eps-converted-to.pdf Graphic file (type pdf)
+
+<use grafer/opg2_all-eps-converted-to.pdf>
+Package pdftex.def Info: grafer/opg2_all-eps-converted-to.pdf used on input lin
+e 139.
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
+(pdftex.def)             Requested size: 318.66948pt x 239.00082pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 142.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 142.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 142.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.0.6
+}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.142 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+0.7}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.142 
+       <./grafer/opg2_e-eps-converted-to.pdf> <./grafer/opg2_i-eps-converted-to
+.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
+=======
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 10000) in paragraph at lines 138--139
+=======
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 
  []
 
 Package babel Info: Redefining danish shorthand "|
+<<<<<<< HEAD
 (babel)             in language  on input line 139.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 139.
@@ -1046,10 +1178,21 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 139.
 [5pdfTeX warning (ext4): destination with the same identifier (name{figure.0.5}
+=======
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 159.
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.0.8}
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 ) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
+<<<<<<< HEAD
 l.139 
        <./grafer/opg2_vokaler-eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 142--143
@@ -1084,19 +1227,51 @@ Here is how much of TeX's memory you used:
  359241 string characters out of 6133351
  431045 words of memory out of 5000000
  23187 multiletter control sequences out of 15000+600000
+=======
+l.159 \end{document}
+                     <./grafer/opg2_all-eps-converted-to.pdf>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 159.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 159.
+ [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 159.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 159.
+
+(./Kursusopg_3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 159.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 159.
+Package rerunfilecheck Info: File `Kursusopg_3.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 159.
+ ) 
+Here is how much of TeX's memory you used:
+ 20055 strings out of 493014
+ 359764 string characters out of 6133352
+ 431225 words of memory out of 5000000
+ 23201 multiletter control sequences out of 15000+600000
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
  12218 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,6n,74p,622b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,74p,622b,481s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/lo
 cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+<<<<<<< HEAD
 Output written on Kursusopg_3.pdf (7 pages, 1958435 bytes).
+=======
+Output written on Kursusopg_3.pdf (9 pages, 2100811 bytes).
+>>>>>>> 49c11e0db11585a90807cc4e4233afd4f3b1f0a7
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
- 18 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
